@@ -16,7 +16,7 @@ model_loaded = keras.models.load_model('model_af')
 LOGGER = get_logger(__name__)
 def run():
     st.set_page_config(
-        page_title="af_predict-TTE-NW",
+        page_title="AF_predict-TTE-NW",
         page_icon="https://papik.pro/uploads/posts/2022-01/thumbs/1643604901_4-papik-pro-p-serdtse-logotip-5.png",
     )
 
