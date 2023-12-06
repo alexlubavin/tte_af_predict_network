@@ -26,39 +26,39 @@ def run():
 
     st.markdown(""" с интегрированной нейронной сетью """)
     
-    ao = st.slider('Аорта, см', min_value=2.0, max_value=8.0, value=3.6, step=0.1, 
+    ao = st.slider('Аорта, см', min_value=2.0, max_value=8.0, value=0.0, step=0.1, 
                    format=None, key=None, help='Введите размер восходящего отдела аорты, см', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    la = st.slider('Левое предсердие, см', min_value=2.0, max_value=8.0, value=3.4, step=0.1, 
+    la = st.slider('Левое предсердие, см', min_value=2.0, max_value=8.0, value=0.0, step=0.1, 
                    format=None, key=None, help='Введите размер левого предсердия в парастернальной позиции по длинной оси, см', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    lv = st.slider('Левый желудочек, см', min_value=2.0, max_value=8.0, value=4.7, step=0.1, 
+    lv = st.slider('Левый желудочек, см', min_value=2.0, max_value=8.0, value=0.0, step=0.1, 
                    format=None, key=None, help='Введите косой диастолический размер левого желудочка в парастернальной позиции по длинной оси, см', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    rv = st.slider('Правый желудочек, см', min_value=1.0, max_value=6.0, value=2.0, step=0.1, 
+    rv = st.slider('Правый желудочек, см', min_value=1.0, max_value=6.0, value=0.0, step=0.1, 
                    format=None, key=None, help='Введите косой диастолический размер правого желудочка в парастернальной позиции по длинной оси, см', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    ra = st.slider('Правое предсердие, см', min_value=2.0, max_value=8.0, value=3.5, step=0.1, 
+    ra = st.slider('Правое предсердие, см', min_value=2.0, max_value=8.0, value=0.0, step=0.1, 
                    format=None, key=None, help='Введите поперечный размер правого предсердия в апикальной четырехкамерной позиции, см', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    pa = st.slider('Легочная артерия, см', min_value=1.0, max_value=4.0, value=1.8, step=0.1, 
+    pa = st.slider('Легочная артерия, см', min_value=1.0, max_value=4.0, value=0.0, step=0.1, 
                    format=None, key=None, help='Введите размер легочной артерии на уровне клапана в парастернальной позиции по короткой оси, см', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    lvaw = st.slider('Межжелудочковая перегородка, см', min_value=0.6, max_value=3.0, value=0.8, step=0.1, 
+    lvaw = st.slider('Межжелудочковая перегородка, см', min_value=0.6, max_value=3.0, value=0.0, step=0.1, 
                    format=None, key=None, help='Введите максимальную толщину межжелудочковой перегородки в парастернальной позиции по длинной оси на уровне створок митрального клапана, см', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    lvpw = st.slider('Задняя стенка левого желудочка, см', min_value=0.6, max_value=3.0, value=0.8, step=0.1, 
+    lvpw = st.slider('Задняя стенка левого желудочка, см', min_value=0.6, max_value=3.0, value=0.0, step=0.1, 
                    format=None, key=None, help='Введите максимальную толщину задней стенки левого желудочка в парастернальной позиции по длинной оси на уровне створок митрального клапана, см', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    ef = st.slider('Фракция выброса левого желудочка, %', min_value=10.0, max_value=80.0, value=56.0, step=1.0, 
+    ef = st.slider('Фракция выброса левого желудочка, %', min_value=10.0, max_value=80.0, value=0.0, step=1.0, 
                    format=None, key=None, help='Введите фракцию выброса, измеренную методом Тейхольца, %', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
@@ -66,15 +66,15 @@ def run():
                    format=None, key=None, help='Введите степень аортальной регургитации, определенную в режиме ЦДК', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    mr = st.slider('Митральная регургитация, степень', min_value=0.0, max_value=4.0, value=1.0, step=1.0, 
+    mr = st.slider('Митральная регургитация, степень', min_value=0.0, max_value=4.0, value=0.0, step=1.0, 
                    format=None, key=None, help='Введите степень митральной регургитации, определенную в режиме ЦДК', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    tr = st.slider('Трикуспидальная регургитация, степень', min_value=0.0, max_value=4.0, value=1.0, step=1.0, 
+    tr = st.slider('Трикуспидальная регургитация, степень', min_value=0.0, max_value=4.0, value=0.0, step=1.0, 
                    format=None, key=None, help='Введите степень трикуспидальной регургитации, определенную в режиме ЦДК', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    cv = st.slider('Нижняя полая вена, см', min_value=0.6, max_value=4.0, value=1.2, step=0.1, 
+    cv = st.slider('Нижняя полая вена, см', min_value=0.6, max_value=4.0, value=0.0, step=0.1, 
                    format=None, key=None, help='Введите размер нижней полой вены на выдохе в субкостальной позиции по длинной оси, см', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
