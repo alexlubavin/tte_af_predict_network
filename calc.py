@@ -22,7 +22,7 @@ def run():
 
     # st.markdown("![Alt ​​Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
 
-    st.write(" # Трансторакалная эхокардиография")
+    st.write(" # Трансторакальная эхокардиография")
 
     st.markdown(""" с интегрированной нейронной сетью """)
     
@@ -108,6 +108,8 @@ def run():
        st.write("Фибрилляция предсерий вероятна!", res[0])
     else:
        st.write("Фибрилляция предсерий маловерятна", res[0])
+
+st.markdown(""" Любавин А. В., Котляров С. Н. """)
     
     
     
