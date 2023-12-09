@@ -105,7 +105,7 @@ def run():
     res = model_loaded.predict(nn)
     output = np.argmax(res)
     if output == 0:
-       st.write("Фибрилляция предсерий вероятна!", res[0])
+       st.write("Размеры сердца соответствуют таковым при фибрилляции предсердий на", float(res[0]))
     else:
        st.write("Фибрилляция предсерий маловерятна", res[0])
 
