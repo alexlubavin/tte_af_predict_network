@@ -62,15 +62,15 @@ def run():
                    format=None, key=None, help='Введите фракцию выброса, измеренную методом Тейхольца, %', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    ar = st.slider('Аортальная регургитация, степень', min_value=0.0, max_value=4.0, value=0.0, step=1.0, 
+    ar = st.slider('Аортальная регургитация, степень', min_value=0.0, max_value=4.0, value=0.0, step=0.5, 
                    format=None, key=None, help='Введите степень аортальной регургитации, определенную в режиме ЦДК', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    mr = st.slider('Митральная регургитация, степень', min_value=0.0, max_value=4.0, value=0.0, step=1.0, 
+    mr = st.slider('Митральная регургитация, степень', min_value=0.0, max_value=4.0, value=0.0, step=0.5, 
                    format=None, key=None, help='Введите степень митральной регургитации, определенную в режиме ЦДК', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
-    tr = st.slider('Трикуспидальная регургитация, степень', min_value=0.0, max_value=4.0, value=0.0, step=1.0, 
+    tr = st.slider('Трикуспидальная регургитация, степень', min_value=0.0, max_value=4.0, value=0.0, step=0.5, 
                    format=None, key=None, help='Введите степень трикуспидальной регургитации, определенную в режиме ЦДК', 
                    on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     
