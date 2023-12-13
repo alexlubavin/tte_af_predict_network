@@ -104,7 +104,7 @@ def run():
     nn = np.expand_dims(x, axis=0)
     res = model_loaded.predict(nn)
     
-   report = res[0].tolist()
+    report = res[0].tolist()
     
     
     if report[0] > 0.85:
